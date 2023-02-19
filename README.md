@@ -86,25 +86,25 @@ unTimely detections     Mean of RA, Dec                    N/A -493.385 -317.811
 ```
 
 ### Plots:
-![PS1_Dec_vs_RA](Example output/L7.5/compare_motion/PS1_Dec_vs_RA_126.330135+21.263431.pdf)
-![PS1_Dec_vs_Time](Example output/L7.5/compare_motion/PS1_Dec_vs_Time_126.330135+21.263431.pdf)
-![PS1_RA_vs_Time](Example output/L7.5/compare_motion/PS1_RA_vs_Time_126.330135+21.263431.pdf)
-![WISE_Dec_vs_RA](Example output/L7.5/compare_motion/WISE_Dec_vs_RA_126.330135+21.263431.pdf)
-![WISE_Dec_vs_Time](Example output/L7.5/compare_motion/WISE_Dec_vs_Time_126.330135+21.263431.pdf)
-![WISE_RA_vs_Time](Example output/L7.5/compare_motion/WISE_RA_vs_Time_126.330135+21.263431.pdf)
-![unTimely_Dec_vs_RA](Example output/L7.5/compare_motion/unTimely_Dec_vs_RA_126.330135+21.263431.pdf)
-![unTimely_Dec_vs_Time](Example output/L7.5/compare_motion/unTimely_Dec_vs_Time_126.330135+21.263431.pdf)
-![unTimely_RA_vs_Time](Example output/L7.5/compare_motion/unTimely_RA_vs_Time_126.330135+21.263431.pdf)
+![PS1_Dec_vs_RA](Example%20output/L7.5/compare_motion/PS1_Dec_vs_RA_126.330135+21.263431.pdf)
+![PS1_Dec_vs_Time](Example%20output/L7.5/compare_motion/PS1_Dec_vs_Time_126.330135+21.263431.pdf)
+![PS1_RA_vs_Time](Example%20output/L7.5/compare_motion/PS1_RA_vs_Time_126.330135+21.263431.pdf)
+![WISE_Dec_vs_RA](Example%20output/L7.5/compare_motion/WISE_Dec_vs_RA_126.330135+21.263431.pdf)
+![WISE_Dec_vs_Time](Example%20output/L7.5/compare_motion/WISE_Dec_vs_Time_126.330135+21.263431.pdf)
+![WISE_RA_vs_Time](Example%20output/L7.5/compare_motion/WISE_RA_vs_Time_126.330135+21.263431.pdf)
+![unTimely_Dec_vs_RA](Example%20output/L7.5/compare_motion/unTimely_Dec_vs_RA_126.330135+21.263431.pdf)
+![unTimely_Dec_vs_Time](Example%20output/L7.5/compare_motion/unTimely_Dec_vs_Time_126.330135+21.263431.pdf)
+![unTimely_RA_vs_Time](Example%20output/L7.5/compare_motion/unTimely_RA_vs_Time_126.330135+21.263431.pdf)
 
 ### Images:
-![Finder_charts_PS1](Example output/L7.5/inspect_motion/Finder_charts_PS1_126.330135+21.263431.pdf)
-![Finder_charts_WISE](Example output/L7.5/inspect_motion/Finder_charts_WISE_126.330135+21.263431.pdf)
-![Image_blinks_PS1_z](Example output/L7.5/inspect_motion/Image_blinks_PS1_z_126.330135+21.263431.gif)
-![Image_blinks_PS1_y](Example output/L7.5/inspect_motion/Image_blinks_PS1_y_126.330135+21.263431.gif)
-![Image_blinks_W1](Example output/L7.5/inspect_motion/Image_blinks_W1_126.330135+21.263431.gif)
-![Image_blinks_W2](Example output/L7.5/inspect_motion/Image_blinks_W2_126.330135+21.263431.gif)
+![Finder_charts_PS1](Example%20output/L7.5/inspect_motion/Finder_charts_PS1_126.330135+21.263431.pdf)
+![Finder_charts_WISE](Example%20output/L7.5/inspect_motion/Finder_charts_WISE_126.330135+21.263431.pdf)
+![Image_blinks_PS1_z](Example%20output/L7.5/inspect_motion/Image_blinks_PS1_z_126.330135+21.263431.gif)
+![Image_blinks_PS1_y](Example%20output/L7.5/inspect_motion/Image_blinks_PS1_y_126.330135+21.263431.gif)
+![Image_blinks_W1](Example%20output/L7.5/inspect_motion/Image_blinks_W1_126.330135+21.263431.gif)
+![Image_blinks_W2](Example%20output/L7.5/inspect_motion/Image_blinks_W2_126.330135+21.263431.gif)
 
-More examples can be found [here](Example output/T8/).
+More examples can be found [here](Example%20output/T8/).
 
 ### ``compare_motion`` function:
 Compares proper motions inferred from Pan-STARRS and WISE single detections to known proper motions (if available) from SIMBAD, Gaia DR3, CatWISE and NSC DR2.
@@ -115,8 +115,8 @@ Compares proper motions inferred from Pan-STARRS and WISE single detections to k
 ``search_radius`` : Radius used to search the relevant catalogs. The default is 5. (int, optional)  
 ``position_plot`` : Whether to create a plot containing the detections used to compute proper motions. The default is True. (bool, optional)  
 ``show_computed_pm_vectors`` : Whether to show the computed proper motion vectors on the position plot. The default is True. (bool, optional)  
-``show_reference_pm_vectors`` : Whether to show the reference proper motion vectors on the position plot. The default is True. (bool, optional)
-``regression_plot`` : Whether to create regression plots of RA an Dec positions. The default is True. (bool, optional)
+``show_reference_pm_vectors`` : Whether to show the reference proper motion vectors on the position plot. The default is True. (bool, optional)  
+``regression_plot`` : Whether to create regression plots of RA an Dec positions. The default is True. (bool, optional)  
 ``global_clip_stds`` : Number of standard deviations used to clip the data globally. If ``None`` is specified, clipping is omitted. The default is 3. (bool, optional)  
 ``year_bin_stds`` : Number of standard deviations used  to clip the data by year bin. If ``None`` is specified, clipping is omitted. The default is 6. (bool, optional)  
 ``directory`` : Directory where the finder charts should be saved. The default is tempfile.gettempdir(). (str, optional)  
