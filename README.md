@@ -86,19 +86,20 @@ unTimely detections     Mean of RA, Dec                    N/A -493.385 -317.811
 ```
 
 ### Plots:
-![PS1_Dec_vs_RA](Example%20output/L7.5/compare_motion/PS1_Dec_vs_RA_126.330135+21.263431.pdf)
-![PS1_Dec_vs_Time](Example%20output/L7.5/compare_motion/PS1_Dec_vs_Time_126.330135+21.263431.pdf)
-![PS1_RA_vs_Time](Example%20output/L7.5/compare_motion/PS1_RA_vs_Time_126.330135+21.263431.pdf)
-![WISE_Dec_vs_RA](Example%20output/L7.5/compare_motion/WISE_Dec_vs_RA_126.330135+21.263431.pdf)
-![WISE_Dec_vs_Time](Example%20output/L7.5/compare_motion/WISE_Dec_vs_Time_126.330135+21.263431.pdf)
-![WISE_RA_vs_Time](Example%20output/L7.5/compare_motion/WISE_RA_vs_Time_126.330135+21.263431.pdf)
-![unTimely_Dec_vs_RA](Example%20output/L7.5/compare_motion/unTimely_Dec_vs_RA_126.330135+21.263431.pdf)
-![unTimely_Dec_vs_Time](Example%20output/L7.5/compare_motion/unTimely_Dec_vs_Time_126.330135+21.263431.pdf)
-![unTimely_RA_vs_Time](Example%20output/L7.5/compare_motion/unTimely_RA_vs_Time_126.330135+21.263431.pdf)
+![PS1_Dec_vs_RA](Example%20output/L7.5/compare_motion/PS1_Dec_vs_RA_126.330135+21.263431.png)
+![PS1_Dec_vs_Time](Example%20output/L7.5/compare_motion/PS1_Dec_vs_Time_126.330135+21.263431.png)
+![PS1_RA_vs_Time](Example%20output/L7.5/compare_motion/PS1_RA_vs_Time_126.330135+21.263431.png)
+![WISE_Dec_vs_RA](Example%20output/L7.5/compare_motion/WISE_Dec_vs_RA_126.330135+21.263431.png)
+![WISE_Dec_vs_Time](Example%20output/L7.5/compare_motion/WISE_Dec_vs_Time_126.330135+21.263431.png)
+![WISE_RA_vs_Time](Example%20output/L7.5/compare_motion/WISE_RA_vs_Time_126.330135+21.263431.png)
+![unTimely_Dec_vs_RA](Example%20output/L7.5/compare_motion/unTimely_Dec_vs_RA_126.330135+21.263431.png)
+![unTimely_Dec_vs_Time](Example%20output/L7.5/compare_motion/unTimely_Dec_vs_Time_126.330135+21.263431.png)
+![unTimely_RA_vs_Time](Example%20output/L7.5/compare_motion/unTimely_RA_vs_Time_126.330135+21.263431.png)
 
 ### Images:
-![Finder_charts_PS1](Example%20output/L7.5/inspect_motion/Finder_charts_PS1_126.330135+21.263431.pdf)
-![Finder_charts_WISE](Example%20output/L7.5/inspect_motion/Finder_charts_WISE_126.330135+21.263431.pdf)
+![Finder_charts_PS1](Example%20output/L7.5/inspect_motion/Finder_charts_PS1_126.330135+21.263431.png)
+![Finder_charts_WISE](Example%20output/L7.5/inspect_motion/Finder_charts_WISE_126.330135+21.263431.png)
+
 ![Image_blinks_PS1_z](Example%20output/L7.5/inspect_motion/Image_blinks_PS1_z_126.330135+21.263431.gif) | ![Image_blinks_PS1_y](Example%20output/L7.5/inspect_motion/Image_blinks_PS1_y_126.330135+21.263431.gif)
 ![Image_blinks_W1](Example%20output/L7.5/inspect_motion/Image_blinks_W1_126.330135+21.263431.gif) | ![Image_blinks_W2](Example%20output/L7.5/inspect_motion/Image_blinks_W2_126.330135+21.263431.gif)
 
