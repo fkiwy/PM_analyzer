@@ -103,7 +103,7 @@ unTimely detections     Mean of RA, Dec                    N/A -493.385 -317.811
 ![Image_blinks_PS1_z](Example%20output/L7.5/inspect_motion/Image_blinks_PS1_z_126.330135+21.263431.gif) | ![Image_blinks_PS1_y](Example%20output/L7.5/inspect_motion/Image_blinks_PS1_y_126.330135+21.263431.gif)
 ![Image_blinks_W1](Example%20output/L7.5/inspect_motion/Image_blinks_W1_126.330135+21.263431.gif) | ![Image_blinks_W2](Example%20output/L7.5/inspect_motion/Image_blinks_W2_126.330135+21.263431.gif)
 
-More examples can be found [here](Example%20output/T8/).
+More examples can be found here: [M9](Example%20output/M9/), [T8](Example%20output/T8/).
 
 ### ``compare_motion`` function:
 Compares proper motions inferred from Pan-STARRS and WISE single detections to known proper motions (if available) from SIMBAD, Gaia DR3, CatWISE and NSC DR2.
