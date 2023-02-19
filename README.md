@@ -8,16 +8,16 @@ It compares proper motions inferred from Pan-STARRS and WISE single detections a
 
 The inferred proper motions are calculated by using three different methods:
 
-1. Median of PM bin
+1. Median of PM bin:   
   The tool calculates the distances between the earliest detection and each subsequent detection.
   Then it does the same for the second earliest detection and each subsequent detection, repeating the process until the distance between the second last detection and last detection has been calculated.
   The resulting proper motions are grouped according to their natural breaks using the Fisher-Jenks algorithm.
   The group with the smallest standard error is used to determine the median proper motion after sigma clipping has been applied.
   
-2. Linear regression
+2. Linear regression:  
    The position of the first and last epochs used to calculate the proper motions are determined by linear regression based on RA and Dec values of the detections over time.
 
-3. Mean of RA, Dec
+3. Mean of RA, Dec:  
    The tool calculates the mean position of the detections belonging to the first and last epochs. Detections are binned by year and sigma clipped before the mean is applied.
 
 The tool overplots the resulting proper motion vectors on the Pan-STARRS and WISE detections and creates linear regression plots to check the quality of the inferred proper motions.
@@ -99,10 +99,8 @@ unTimely detections     Mean of RA, Dec                    N/A -493.385 -317.811
 ### Images:
 ![Finder_charts_PS1](Example%20output/L7.5/inspect_motion/Finder_charts_PS1_126.330135+21.263431.pdf)
 ![Finder_charts_WISE](Example%20output/L7.5/inspect_motion/Finder_charts_WISE_126.330135+21.263431.pdf)
-![Image_blinks_PS1_z](Example%20output/L7.5/inspect_motion/Image_blinks_PS1_z_126.330135+21.263431.gif)
-![Image_blinks_PS1_y](Example%20output/L7.5/inspect_motion/Image_blinks_PS1_y_126.330135+21.263431.gif)
-![Image_blinks_W1](Example%20output/L7.5/inspect_motion/Image_blinks_W1_126.330135+21.263431.gif)
-![Image_blinks_W2](Example%20output/L7.5/inspect_motion/Image_blinks_W2_126.330135+21.263431.gif)
+![Image_blinks_PS1_z](Example%20output/L7.5/inspect_motion/Image_blinks_PS1_z_126.330135+21.263431.gif) | ![Image_blinks_PS1_y](Example%20output/L7.5/inspect_motion/Image_blinks_PS1_y_126.330135+21.263431.gif)
+![Image_blinks_W1](Example%20output/L7.5/inspect_motion/Image_blinks_W1_126.330135+21.263431.gif) | ![Image_blinks_W2](Example%20output/L7.5/inspect_motion/Image_blinks_W2_126.330135+21.263431.gif)
 
 More examples can be found [here](Example%20output/T8/).
 
