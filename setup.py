@@ -8,4 +8,4 @@ setup(name='PM_analyzer',
       author_email='frank.kiwy@outlook.com',
       license='MIT',
       py_modules=['PM_analyzer'],
-      install_requires=['numpy', 'matplotlib', 'pillow', 'requests', 'astropy', 'reproject', 'jenkspy', 'sklearn', 'statsmodels'])
+      install_requires=['numpy', 'matplotlib', 'pillow', 'requests', 'astropy', 'astroquery', 'reproject', 'jenkspy', 'scikit-learn', 'statsmodels'])

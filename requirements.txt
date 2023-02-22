@@ -3,6 +3,7 @@ matplotlib
 pillow
 requests
 astropy
+astroquery
 reproject
 jenkspy
 scikit-learn
