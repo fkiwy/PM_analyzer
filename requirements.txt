@@ -5,5 +5,5 @@ requests
 astropy
 reproject
 jenkspy
-sklearn
+scikit-learn
 statsmodels
