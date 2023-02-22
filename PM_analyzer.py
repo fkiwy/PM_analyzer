@@ -548,7 +548,7 @@ def compare_motion(ra, dec, search_radius=5, position_plot=True, show_computed_p
 
     print('\nRetrieving known poper motions from catalogs ...')
 
-    pm_table = Table(names=('PM origine', 'Method', 'Source ID', 'pmra', 'pmdec', 'e_pmra', 'e_pmdec'),
+    pm_table = Table(names=('PM_origine', 'Method', 'Source_ID', 'pmra', 'pmdec', 'e_pmra', 'e_pmdec'),
                      units=('', '', '', pm_unit, pm_unit, pm_unit, pm_unit),
                      dtype=('S', 'S', 'S', 'f', 'f', 'f', 'f'))
 
