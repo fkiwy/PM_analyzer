@@ -10,7 +10,7 @@ The inferred proper motions are calculated by using three different methods:
 
 1. Median of PM bin:   
   The tool calculates the distances between the earliest detection and each subsequent detection.
-  Then it does the same for the second earliest detection and each subsequent detection, repeating the process until the distance between the second last detection and last detection has been calculated.
+  Then it does the same for the second earliest detection and each subsequent detection, repeating the process until the distance between the second last and last detection has been calculated.
   The resulting proper motions are grouped according to their natural breaks using the Fisher-Jenks algorithm.
   The group with the smallest standard error is used to determine the median proper motion after sigma clipping has been applied.
   
@@ -20,7 +20,7 @@ The inferred proper motions are calculated by using three different methods:
 3. Mean of RA, Dec:  
    The tool calculates the mean position of the detections belonging to the first and last epochs. Detections are binned by year and sigma clipped before the mean is applied.
 
-The tool overplots the resulting proper motion vectors on the Pan-STARRS and WISE detections and creates linear regression plots to check the quality of the inferred proper motions.
+The tool overplots the resulting proper motion vectors on the Pan-STARRS, WISE abd unTimely detections and creates linear regression plots to check the quality of the inferred proper motions.
 
 In addition, the proper motions of a specific object can be visually inspected using multi-band finder charts and image blinks.
 
