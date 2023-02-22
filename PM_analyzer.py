@@ -613,7 +613,7 @@ def compare_motion(ra, dec, search_radius=5, position_plot=True, show_computed_p
         pmdec = row['pmdec']
 
         if tpm(pmra, pmdec) > 0:
-            pm_table.add_row(('Gaia DR3', '2021A&A...649A...1G', row['id'], pmra, pmdec, row['e_pmra'], row['e_pmdec']))
+            pm_table.add_row(('Gaia DR3', '2021A&A...649A...1G', str(row['id']), pmra, pmdec, row['e_pmra'], row['e_pmdec']))
             pm_ref['gaia'] = (pmra, pmdec)
 
     # NSC DR2
