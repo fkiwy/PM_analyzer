@@ -4,6 +4,6 @@ pillow
 requests
 astropy
 reproject
-jenkspy,
-sklearn,
+jenkspy
+sklearn
 statsmodels
