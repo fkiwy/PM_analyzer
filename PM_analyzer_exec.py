@@ -1,5 +1,6 @@
 from PM_analyzer import compare_motion, inspect_motion
-# port tempfile
+import os
+# import tempfile
 
 # out_dir = tempfile.gettempdir()
 out_dir = 'PM_analyzer_output'
@@ -13,7 +14,7 @@ pm_table = compare_motion(ra, dec, search_radius=10, position_plot=True, show_co
                           untimely_index_file='untimely_index-neo7.fits')
 
 # pm_table.pprint_all()
-pm_table.write('pm_table.dat', format='ipac', overwrite=True)
+pm_table.write(os.path.join(out_dir, 'pm_table.dat'), format='ipac', overwrite=True)
 
 inspect_motion(ra, dec, ps1_images=True, ps1_img_size=10, ps1_img_zoom=10, ps1_img_contrast=5, stack_ps1_images=True,
                wise_images=True, wise_img_size=50, wise_img_zoom=20, wise_img_contrast=5, object_info=True, image_blinks=True,
