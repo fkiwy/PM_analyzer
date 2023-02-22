@@ -315,7 +315,7 @@ def compare_motion(ra, dec, search_radius=5, position_plot=True, show_computed_p
             plt.gca().set_yticklabels(['{:.4f}'.format(y) for y in ticks_loc])
 
             filename = survey + '_' + label + '_vs_Time_' + create_obj_name(ra, dec) + '.' + file_format
-            plt.savefig(os.path.join(directory, filename), dpi=600, bbox_inches='tight', format=file_format)
+            plt.savefig(filename, dpi=600, bbox_inches='tight', format=file_format)
             plt.close()
 
             if open_file:
@@ -360,7 +360,7 @@ def compare_motion(ra, dec, search_radius=5, position_plot=True, show_computed_p
         plt.gca().set_yticklabels(['{:.4f}'.format(y) for y in yticks])
 
         filename = survey + '_Dec_vs_RA_' + create_obj_name(ra, dec) + '.' + file_format
-        plt.savefig(os.path.join(directory, filename), dpi=600, bbox_inches='tight', format=file_format)
+        plt.savefig(filename, dpi=600, bbox_inches='tight', format=file_format)
         plt.close()
 
         if open_file:
@@ -539,6 +539,10 @@ def compare_motion(ra, dec, search_radius=5, position_plot=True, show_computed_p
     # Main method starts here
     # =======================
     warnings.simplefilter('ignore', category=Warning)
+
+    path, filename = os.path.split(os.getcwd())
+    if filename != directory:
+        os.chdir(directory)
 
     pixel_scale = 2.75
     coords = SkyCoord(ra*u.deg, dec*u.deg)
@@ -1113,7 +1117,7 @@ def inspect_motion(ra, dec, ps1_images=True, ps1_img_size=10, ps1_img_zoom=10, p
 
         # Save and open the PDF file
         filename = 'Finder_charts_' + survey_name + '_' + create_obj_name(ra, dec) + '.' + file_format
-        plt.savefig(os.path.join(directory, filename), dpi=600, bbox_inches='tight', format=file_format)
+        plt.savefig(filename, dpi=600, bbox_inches='tight', format=file_format)
         plt.close()
 
         if open_file:
@@ -1159,7 +1163,7 @@ def inspect_motion(ra, dec, ps1_images=True, ps1_img_size=10, ps1_img_zoom=10, p
                 blinks.append(rgb_image)
 
             filename = 'Image_blinks_' + band.replace(' ', '_') + '_' + create_obj_name(ra, dec) + '.gif'
-            blinks[0].save(os.path.join(directory, filename), save_all=True, append_images=blinks[1:], loop=0)
+            blinks[0].save(filename, save_all=True, append_images=blinks[1:], loop=0)
             blinks = []
 
             if open_file:
@@ -1192,7 +1196,10 @@ def inspect_motion(ra, dec, ps1_images=True, ps1_img_size=10, ps1_img_zoom=10, p
     # Main method starts here
     # =======================
     warnings.simplefilter('ignore', category=Warning)
-    os.chdir(directory)
+
+    path, filename = os.path.split(os.getcwd())
+    if filename != directory:
+        os.chdir(directory)
 
     coords = SkyCoord(ra*u.deg, dec*u.deg)
 
