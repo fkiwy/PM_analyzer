@@ -29,5 +29,5 @@ jobs:
         run: python PM_analyzer_exec.py
       - uses: actions/upload-artifact@v3
         with:
-          name: PM_analyzer_output result
-          path: PM_analyzer_output_output
+          name: PM_analyzer result
+          path: PM_analyzer_output
