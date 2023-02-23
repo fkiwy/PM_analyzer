@@ -33,7 +33,7 @@ Both parameters have a default value of 3 and 6, respectively. All sigma clippin
 
 ## Module dependencies
 
-The Python Standard Library, NumPy, Matplotlib, Pillow (PIL Fork), Requests, Astropy, Reproject, Jenkspy, Sklearn and Statsmodels.
+The Python Standard Library, NumPy, Matplotlib, Pillow (PIL Fork), Requests, Astropy, Astroquery, Reproject, Jenkspy, Scikit-learn (Sklearn) and Statsmodels.
 
 ## Installation
 
