@@ -539,10 +539,7 @@ def compare_motion(ra, dec, search_radius=5, position_plot=True, show_computed_p
     # Main method starts here
     # =======================
     warnings.simplefilter('ignore', category=Warning)
-
-    path, filename = os.path.split(os.getcwd())
-    if filename != directory:
-        os.chdir(directory)
+    os.chdir(directory)
 
     pixel_scale = 2.75
     coords = SkyCoord(ra*u.deg, dec*u.deg)
@@ -1196,10 +1193,7 @@ def inspect_motion(ra, dec, ps1_images=True, ps1_img_size=10, ps1_img_zoom=10, p
     # Main method starts here
     # =======================
     warnings.simplefilter('ignore', category=Warning)
-
-    path, filename = os.path.split(os.getcwd())
-    if filename != directory:
-        os.chdir(directory)
+    os.chdir(directory)
 
     coords = SkyCoord(ra*u.deg, dec*u.deg)
 

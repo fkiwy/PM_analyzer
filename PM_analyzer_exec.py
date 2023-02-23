@@ -1,8 +1,7 @@
 from PM_analyzer import compare_motion, inspect_motion
-# import tempfile
+import os
 
-# out_dir = tempfile.gettempdir()
-out_dir = 'PM_analyzer_output'
+out_dir = os.path.join(os.getcwd(), 'PM_analyzer_output')
 
 ra = 126.3301355
 dec = 21.2634308
@@ -12,7 +11,6 @@ pm_table = compare_motion(ra, dec, search_radius=10, position_plot=True, show_co
                           untimely_base_url='http://unwise.me/data/neo7/untimely-catalog/',
                           untimely_index_file='untimely_index-neo7.fits')
 
-# pm_table.pprint_all()
 pm_table.write('pm_table.dat', format='ipac', overwrite=True)
 
 inspect_motion(ra, dec, ps1_images=True, ps1_img_size=10, ps1_img_zoom=10, ps1_img_contrast=5, stack_ps1_images=True,
