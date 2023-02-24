@@ -696,7 +696,7 @@ def compare_motion(ra, dec, search_radius=5, position_plot=True, show_computed_p
     table = Catalogs.query_region(coords, radius=search_radius*u.arcsec, catalog='Panstarrs', data_release='dr2', table='detection',
                                   columns=['obsTime', 'ra', 'dec'])
 
-    if table:
+    if table and len(table) > 10:
         table = clip_positions(table)
         obs_time = table['obsTime']
         obs_ra = table['ra']
@@ -766,7 +766,7 @@ def compare_motion(ra, dec, search_radius=5, position_plot=True, show_computed_p
     print('\nDownloading WISE single detections ...')
     table = get_l1b_photometry(ra, dec, search_radius)
 
-    if table:
+    if table and len(table) > 10:
         table = clip_positions(table)
         obs_time = table['obsTime']
         obs_ra = table['ra']
@@ -836,7 +836,7 @@ def compare_motion(ra, dec, search_radius=5, position_plot=True, show_computed_p
     print('\nDownloading unTimely detections ...')
     table = search_by_coordinates(ra, dec, search_radius)
 
-    if table:
+    if table and len(table) > 10:
         table = clip_positions(table)
         obs_time = table['obsTime']
         obs_ra = table['ra']
